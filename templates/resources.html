@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row divider blue">
+  <div class="col-md-12"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-3 topic-list">
+    <a href="{{url_for('showResources', topicname='Computers')}}"><h2>Computers</h2></a><br>
+    <a href="{{url_for('showResources', topicname='History')}}"><h2>History</h2></a><br>
+    <a href="{{url_for('showResources', topicname='Investing')}}"><h2>Investing</h2></a><br>
+    <a href="{{url_for('showResources', topicname='Social Science')}}"><h2>Social Science</h2></a><br>
+  </div>
+
+  <div class="col-md-9 padding-top">
+    <a href="{{url_for('newResource')}}">
+      <button class="btn btn-default" id="new-resource">Add Item</button>
+    </a>
+
+    <h2>{{topicname}}</h2>
+
+    {% for item in resources %}
+    <p><a href="{{url_for('showItem', topicname=item.topic, resourcename=item.name, resource_id=item.id)}}">{{item.name}}</a><br>
+    {{item.created_date}}<br></p>
+    {% endfor %}
+  </div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row divider blue"></div>
+
+<div class="row padding-top">
+
+  <h2>Delete resource item</h2>
+  <p>Are your sure your want to delete {{resource.name}}?</p>
+
+  <form action= '{{url_for('deleteResource', resource=deletedResource,
+  topicname=resource.topic, resourcename=resource.name, resource_id=resource.id)}}' method = 'post'>
+    <button type="submit" class="btn btn-default delete" id="submit">Delete</button>
+    <a href = '{{url_for('showItem', topicname=resource.topic, resourcename=resource.name, resource_id=resource.id)}}'>Cancel</a>
+  </form>
+
+</div>
+
+{% endblock %}

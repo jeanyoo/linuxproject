@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row divider blue">
+  <div class="col-md-12"></div>
+</div>
+
+<div class="row">
+
+  <h2>Edit resource item</h2>
+
+  <form action='{{url_for('editResource', topicname=resource.topic, resourcename=resource.name,
+  resource_id=resource.id)}}' method='post'>
+
+    <p>Name:</p>
+    <input type='text' size='50' name='name' placeholder='{{resource.name}}'><br>
+    <p>Description:</p>
+    <textarea name='description' cols='50' rows='5' placeholder='{{resource.description}}'></textarea><br>
+    <p>Topic:</p>
+    <input type='radio' name='topic' value='Computers' {%if resource.topic == 'Computers'%}checked{%endif%}> Computers<br>
+    <input type='radio' name='topic' value='History'{%if resource.topic == 'History'%}checked{%endif%}> History<br>
+    <input type='radio' name='topic' value='Investing'{%if resource.topic == 'Investing'%}checked{%endif%}> Investing<br>
+    <input type='radio' name='topic' value='Social Science'{%if resource.topic == 'Social Science'%}checked{%endif%}> Social Science<br><br>
+
+    <button type="submit" class="btn btn-default" id="submit">Edit</button>
+    <a href = '{{url_for('showItem', topicname=resource.topic, resourcename=resource.name, resource_id=resource.id)}}'>Cancel</a>
+  </form>
+
+</div>
+
+{% endblock %}

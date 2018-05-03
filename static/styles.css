@@ -1,0 +1,117 @@
+body {
+  background-color: #f7f9f7;
+}
+
+* {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	color: #51453B;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 24px;
+	color: #396093;
+	line-height: 29px;
+}
+
+h3 {
+	font-size: 20px;
+	color: #4A4A4A;
+	line-height: 23px;
+}
+
+p {
+ font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+ font-size: 16px;
+ color: #7B7573;
+ line-height: 24px;
+ font-weight: 400;
+}
+
+a {
+ font-size: 14px;
+ color: #0093B9;
+ line-height: 17px;
+}
+
+.padding-top {
+ padding-top: 10px;
+}
+.padding-bottom {
+ padding-bottom: 30px;
+}
+.margin-right {
+ margin-right: 30px;
+}
+.padding-none {
+ padding: 0;
+}
+
+.btn {
+	padding: 20px;
+	margin: 0;
+	border-color: #9FB80A;
+	border-width: 2px;
+	color: #9FB80A;;
+}
+
+.btn:hover {
+	border-color: #9FB80A;
+}
+
+.btn.delete {
+	border-color: #aaaaaa;
+	color: #aaaaaa;
+}
+
+.btn.delete:hover {
+	border-color: #aaaaaa;
+	color: red;
+}
+
+.top-menu {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.top-menu p {
+	margin-bottom: 0;
+	line-height: 16px;
+}
+.top-menu a {
+	margin-bottom: 0;
+	line-height: 16px;
+	font-size: 16px;
+	color: #7B7573;
+	font-weight: 400;
+}
+.divider {
+	height: 5px;
+}
+.divider.blue {
+	background-color: #396093;
+}
+
+.topic-list {
+ 	background-color: #e1e17f;
+ 	padding: 10px;
+ }
+
+.flash {
+	background-color: #98FB98;
+	width:100%;
+	text-decoration: none;
+
+}
+
+.flash li {
+	list-style-type: none;
+	text-align: center;
+
+}

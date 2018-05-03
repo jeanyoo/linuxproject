@@ -1,0 +1,45 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row divider blue"></div>
+
+<div class="row padding-top">
+  <h2>New resource item</h2>
+
+  <form action='{{url_for('newResource')}}' method='post'>
+    <p>Name:</p>
+    <input type='text' size='50' name='name'><br>
+
+    <p>Description:</p>
+    <textarea name='description' cols='50' rows='5'></textarea><br>
+
+    <p>Topic:</p>
+    <input type='radio' name='topic' value='Computers'> Computers<br>
+    <input type='radio' name='topic' value='History'> History<br>
+    <input type='radio' name='topic' value='Investing'> Investing<br>
+    <input type='radio' name='topic' value='Social Science'> Social Science<br><br>
+
+    <input type='hidden' size='30' name='created_date' id='created_date'><br>
+
+    <button type="submit" class="btn btn-default" id="submit">Create</button>
+    <a href='{{url_for('showCatalog')}}'>Cancel</a>
+  </form>
+</div>
+
+<script type='text/javascript'>
+  function getDate(){
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+    if (dd<10){dd='0'+dd} if(mm<10){mm='0'+mm}
+    today = yyyy+"-"+mm+"-"+dd;
+
+    document.getElementById("created_date").value = today;
+  }
+
+  getDate();
+</script>
+
+{% endblock %}

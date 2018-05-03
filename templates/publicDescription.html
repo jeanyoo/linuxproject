@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "publicHeader.html" %}
+
+<div class="row divider blue">
+  <div class="col-md-12"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 padding-top">
+    <h2>{{resource.name}}</h2>
+    <p>{{resource.description}}</p>
+    {{resource.topic}}<br>
+    {{resource.created_date}}<br><br>
+
+    <a href="{{url_for('showCatalog')}}">
+      <button class="btn btn-default" id="catalog">Catalog</button></a>
+  </div>
+</div>
+
+{% endblock %}
