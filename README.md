@@ -1,8 +1,8 @@
 # Linux Server Project: Item Catalog
 
-DNS: http://ec2-13-228-232-119.ap-southeast-1.compute.amazonaws.com/
-IP address: 13.228.232.119
-SSH port: 2200
+* DNS: http://ec2-13-228-232-119.ap-southeast-1.compute.amazonaws.com/
+* IP address: 13.228.232.119
+* SSH port: 2200
 
 ### Website:
 
@@ -112,7 +112,7 @@ host    all             all             ::1/128                 md5
 
 ### Resources for reference
 
-* Flask on Ubuntu: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps                    
+* Flask on Ubuntu: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps                 
 * Database engine configuration: http://docs.sqlalchemy.org/en/latest/core/engines.html
 * Setting up Postgresql on Ubuntu: https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
 * Locale setting (can face when installing modules): https://askubuntu.com/questions/162391/how-do-i-fix-my-locale-issue
