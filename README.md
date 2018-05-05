@@ -117,4 +117,4 @@ host    all             all             ::1/128                 md5
 * Setting up Postgresql on Ubuntu: https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
 * Locale setting (can face when installing modules): https://askubuntu.com/questions/162391/how-do-i-fix-my-locale-issue
 * Change timezone: https://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt
-
+* Disable remote root login: https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user
